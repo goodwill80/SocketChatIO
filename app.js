@@ -17,11 +17,37 @@ app.get('/', function(req, res){
   res.render('index.html');
 })
 
+//empty user array
+var usernames = [];
 
 io.sockets.on('connection', function(socket){
+
+  //creating new users
+  socket.on('new user', function(data, callback){
+    if(usernames.indexOf(data) != -1) {
+      callback(false);
+    } else {
+      callback(true);
+      socket.username = data;
+      usernames.push(socket.username);
+      updateUsernames();
+    }
+  });
+
+  //update usernames after creation
+  function updateUsernames() {
+    io.sockets.emit('usernames', usernames);
+  }
   //send message event
   socket.on('send message', function(data){
-    io.sockets.emit('new message', {msg: data} );
+    io.sockets.emit('new message', {msg: data, user: socket.username} );
+  });
+
+  //disconnect event to remove users
+  socket.on('disconnect', function(data){
+    if(!socket.username) return;
+    usernames.splice(usernames.indexOf(socket.username), 1);
+    updateUsernames();
   })
 })
 

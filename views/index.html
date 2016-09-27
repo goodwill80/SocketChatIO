@@ -10,9 +10,10 @@
   <body>
 
     <div class="container">
-
+      <h2>Welcome to our private ChatApp</h2>
       <div id="namesWrapper">
-        <h2>ChatApp</h2>
+        <div id="error"></div>
+      </br>
         <form id="usernameForm">
         <label for="CreateUser">Create User</label>
         <input type="username" class="form-control" id="username" placeholder="Username">
@@ -20,12 +21,13 @@
         <button type="submit" class="btn btn-primary">Enter</button>
       </form>
       </div>
-
+    </br></br>
       <div id="mainWrapper">
-        <h2>Chat IO</h2>
-        <div id="chatWindow"></div>
-        <div id="chatWrapper">
+        <h4>Chat Screen</h4>
 
+        <div id="chatWrapper">
+          <div id="chatWindow"></div>
+        </br>
           <form id="messageForm">
             <label for="Message">Message</label>
             <textarea id="message" class="form-control" rows="3" placeholder="Please enter your message"></textarea>
