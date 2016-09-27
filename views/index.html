@@ -23,8 +23,9 @@
 
       <div id="mainWrapper">
         <h2>Chat IO</h2>
+        <div id="chatWindow"></div>
         <div id="chatWrapper">
-          <div id="chatWindow"></div>
+
           <form id="messageForm">
             <label for="Message">Message</label>
             <textarea id="message" class="form-control" rows="3" placeholder="Please enter your message"></textarea>
@@ -43,17 +44,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>
