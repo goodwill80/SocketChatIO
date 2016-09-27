@@ -1,3 +1,27 @@
+ body {
+   color: rgb(255, 255, 255);
+   margin-top: -48px;
+   height: 748px;
+   background: url("https://static.pexels.com/photos/7974/pexels-photo-large.jpg") no-repeat scroll 0px 100% / cover transparent;
+ }
+
+h4, label {
+  color: #FBF062 !important;
+}
+
+h1 {
+  color: white !important;
+}
+
+p {
+  color: gray;
+}
+
+button {
+  background: #40E0D0 !important;
+  border-color: #40E0D0 !important;
+  width: 100px;
+}
 
 #mainWrapper {
   height: 200%;
@@ -13,6 +37,7 @@
 
   float: left;
   width: 50%;
+  height: 150px;
   padding: 10px;
   margin: 0 auto;
 }
@@ -20,22 +45,23 @@
 #userWrapper {
   float: left;
   /*border: 1px #ccc solid;*/
-  border-radius: 5px;
-  background: #f4f4f4;
+  border-radius: 10px;
+  background: white;
   padding: 10px;
   margin-top: 10px;
   margin-left: 40px;
   width: 20%;
-  height: 200px;
-  max-height: 200px;
+  height: 300px;
+  max-height: 300px;
   display: inline-block
 
 }
 
 #chatWindow {
-  height: 200px;
+  height: 300px;
   width: 100%;
   border-radius: 5px;
   background: #f4f4f4;
+  padding: 15px;
 
 }
