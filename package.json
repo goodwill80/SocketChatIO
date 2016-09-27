@@ -1,19 +1,24 @@
 {
-  "name": "todomvc-server",
+  "name": "chatappio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
   },
-  "author": "",
+  "author": "jonathan",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "compression": "^1.6.2",
-    "express": "^4.14.0",
-    "method-override": "^2.3.6",
-    "mongoose": "^4.6.0",
-    "morgan": "^1.7.0"
-  }
+    "ejs": "^2.5.2",
+    "express": "*",
+    "socket.io": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodwill80/SocketChatIO.git"
+  },
+  "bugs": {
+    "url": "https://github.com/goodwill80/SocketChatIO/issues"
+  },
+  "homepage": "https://github.com/goodwill80/SocketChatIO#readme",
+  "description": ""
 }
