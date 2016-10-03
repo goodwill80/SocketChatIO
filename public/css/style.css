@@ -1,7 +1,7 @@
  body {
    color: rgb(255, 255, 255);
-   margin-top: -48px;
-   height: 748px;
+   margin-top: -45px;
+   height: 825px;
    background: url("https://static.pexels.com/photos/7974/pexels-photo-large.jpg") no-repeat scroll 0px 100% / cover transparent;
  }
 
@@ -19,7 +19,7 @@ p {
 
 button {
   background: #40E0D0 !important;
-  border-color: #40E0D0 !important;
+  border:none !important;
   width: 100px;
 }
 

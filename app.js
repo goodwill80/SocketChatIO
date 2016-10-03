@@ -56,7 +56,7 @@ io.sockets.on('connection', function(socket){
 
 
 
-server.listen(process.env.PORT || 9000);
+server.listen(process.env.PORT || 8000);
 
 // app.listen(app.get('port'), function() {
 //   console.log('My express server is running at localhost', app.get('port'));
